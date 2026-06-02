@@ -60,8 +60,4 @@ export const loginSession = (app)=>{
       </div>
     </div>
     `;
-    // document.getElementById('login-form').addEventListener('submit', (e) => {
-    //   e.preventDefault();
-    //   navigateTo("/");
-    // });
 };

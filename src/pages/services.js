@@ -122,7 +122,4 @@ export const servicesSession = (app)=>{
       </div>
     </div>
   </section>`;
-  document.getElementById('btn_login').addEventListener('click', () => {
-    navigateTo("/login");
-  });
 };
