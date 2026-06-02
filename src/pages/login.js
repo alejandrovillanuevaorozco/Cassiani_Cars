@@ -1,4 +1,5 @@
 import { navigateTo } from "../router/router";
+import { validateLogin } from "../utils/validatiion";
 export const loginSession = (app)=>{
     document.querySelector('#app').innerHTML = `
     <div class="bg-[url(src/assets/cassiani-bg-login.png)]
@@ -24,14 +25,14 @@ export const loginSession = (app)=>{
               <label class="text-soft-white">Email</label>
               <div class="border-b-2 border-border-metal-gray border-2 rounded-md flex bg-dark-gray">
                 <i class="text-metal-plate p-5 self-center fa-solid fa-user"></i>
-                <input class="p-5 bg-dark-gray w-full text-metal-plate pl-4 focus:outline-none" type="email" placeholder="Enter your email">
+                <input id="email-input" class="p-5 bg-dark-gray w-full text-metal-plate pl-4 focus:outline-none" type="email" placeholder="Enter your email">
               </div>
             </div>
             <div class="flex gap-2  flex-col">
               <label class="text-soft-white">Password</label>
               <div class="border-b-2 border-border-metal-gray border-2 rounded-md flex bg-dark-gray">
                 <i class="text-metal-plate p-5 self-center fa-solid fa-lock"></i>
-                <input class="p-5 bg-dark-gray w-full text-metal-plate pl-4 focus:outline-none" type="password" placeholder="Enter your password">
+                <input id="password-input" class="p-5 bg-dark-gray w-full text-metal-plate pl-4 focus:outline-none" type="password" placeholder="Enter your password">
               </div>
             </div>
             <a class="text-bright-gold self-end" href="">Forgot Password?</a>
@@ -60,8 +61,12 @@ export const loginSession = (app)=>{
       </div>
     </div>
     `;
-    // document.getElementById('login-form').addEventListener('submit', (e) => {
-    //   e.preventDefault();
-    //   navigateTo("/");
-    // });
+    document.getElementById('login-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const emailInput = document.getElementById('email-input').value;
+      const passwordInput = document.getElementById('password-input').value;
+
+      console.log(validateLogin(emailInput, passwordInput));
+      
+    });
 };

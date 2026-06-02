@@ -11,4 +11,3 @@ window.addEventListener('popstate', (event)=>{
         console.log('Restored State', event,state); 
     }
 });
-console.log("msdkmakdmlakmdfakdsm");
