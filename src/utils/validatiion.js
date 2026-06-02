@@ -1,6 +1,6 @@
 
 import { navigateTo } from "../router/router";
-const endPointUsers = "http://localhost:3000/users";
+export const endPointUsers = "http://localhost:3000/users";
 
 export async function validateLogin(emailUser, passwordUser){
     try{
@@ -26,7 +26,9 @@ export async function validateLogin(emailUser, passwordUser){
 }
 
 function redirectByRol(role) {
-    if(role === "customer"){
-        navigateTo("/dashboard") // donde se dirigira el customer al log in
+    console.log(role);
+    
+    if(role === "customer" ){
+        navigateTo("/") // donde se dirigira el customer al log in
     }// falta el admin
 }
