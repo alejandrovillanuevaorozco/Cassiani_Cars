@@ -1,7 +1,7 @@
 import { navigateTo } from "../router/router";
 export const loginSession = (app)=>{
     document.querySelector('#app').innerHTML = `
-    <div class="bg-[url(src/assets/cassiani-bg-login.png)]
+    <div class="bg-[url(src/assets/login_img/cassiani-bg-login.png)]
     bg-cover
     bg-no-repeat
     min-h-screen

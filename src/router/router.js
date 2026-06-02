@@ -1,8 +1,10 @@
 import { loginSession } from "../pages/login";
 import { landingPage } from "../pages/home";
+import { servicesSession } from "../pages/services";
 
 const routes = {
     "/login": loginSession,
+    "/services": servicesSession,
     "/": landingPage
 };
 
