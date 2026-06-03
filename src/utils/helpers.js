@@ -56,6 +56,7 @@ export async function signUpAccount() {
     else newId = lastUser.id + 1;
 
     
+    console.log(dataUser);
     
     const dataUser = {
         id: newId,
