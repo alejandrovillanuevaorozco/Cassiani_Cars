@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Mary",
       "lastName": "Gomez",
-      "role": "customer",
+      "role": "client",
       "email": "mary@icloud.me",
       "password": "qwe"
     },

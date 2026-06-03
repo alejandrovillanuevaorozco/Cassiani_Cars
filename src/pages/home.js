@@ -26,7 +26,4 @@ export const landingPage = (app) => {
       document.getElementById('btn_buy').addEventListener('click', () => {
     navigateTo("/buy");
   });
-        document.getElementById('btn_users').addEventListener('click', () => {
-    navigateTo("/users");
-  });  
 };
