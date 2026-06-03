@@ -2,9 +2,11 @@ import { loginSession } from "../pages/login";
 import { landingPage } from "../pages/home";
 import { servicesSession } from "../pages/services";
 import { usersSession } from "../pages/users";
+import { models } from "../pages/models";
 
 const routes = {
     "/login": loginSession,
+    "/model": models,
     "/services": servicesSession,
     "/users": usersSession,
     "/": landingPage
