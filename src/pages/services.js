@@ -1,6 +1,8 @@
+import { header, initHeaderevents } from "../components/header";
 import { navigateTo } from "../router/router";
 export const servicesSession = (app)=>{
     document.querySelector('#app').innerHTML = `
+  ${header()}
   <section class="relative h-[70vh] overflow-hidden">
     <img src="src/assets/servicios_img/banner-servicios.jpg" alt="Nuestros Servicios"
       class="w-full h-full object-cover">
@@ -140,4 +142,5 @@ export const servicesSession = (app)=>{
         document.getElementById('btn_users').addEventListener('click', () => {
     navigateTo("/users");
   });  
+  initHeaderevents()
 };

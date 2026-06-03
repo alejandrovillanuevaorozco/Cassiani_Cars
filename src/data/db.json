@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Mary",
       "lastName": "Gomez",
-      "role": "customer",
+      "role": "client",
       "email": "mary@icloud.me",
       "password": "qwe"
     },
@@ -39,6 +39,14 @@
       "role": "client",
       "password": "Loca",
       "id": 5
+    },
+    {
+      "id": 6,
+      "name": "",
+      "lastName": "",
+      "role": "customer",
+      "email": "",
+      "password": ""
     }
   ],
   "vehicle": [

@@ -56,7 +56,7 @@ export async function signUpAccount() {
     else newId = lastUser.id + 1;
 
     
-
+    
     const dataUser = {
         id: newId,
         name: nameInput,
@@ -65,6 +65,7 @@ export async function signUpAccount() {
         email: emailInput,
         password: passwordInput
     }
+
     console.log("OBJETO ENVIADO", dataUser);
     await createUser(dataUser);
 }

@@ -151,19 +151,23 @@ export const loginSession = (app) => {
     e.preventDefault();
     signUpAccount();
     
-    //signUpForm.reset();
+    signUpForm.reset();
     
-    // toggleHidden(signUpForm, loginForm, document.getElementById('titleLogin'));
+    toggleHidden(signUpForm, loginForm, document.getElementById('titleLogin'));
     
     });
 
     document.getElementById('signin-btn').addEventListener('click', (e)=>{
       e.preventDefault();
       toggleHidden(signUpForm, loginForm, document.getElementById('titleLogin'));
+      signUpForm.reset();
+
     });
     document.getElementById('cancel-btn').addEventListener('click', (e)=>{
       e.preventDefault();
       toggleHidden(signUpForm, loginForm, document.getElementById('titleLogin'));
+      signUpForm.reset();
+
   });
 };
 

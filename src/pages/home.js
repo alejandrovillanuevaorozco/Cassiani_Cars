@@ -1,7 +1,9 @@
+import { header, initHeaderevents } from "../components/header";
 import { navigateTo } from "../router/router";
 
 export const landingPage = (app) => {
   app.innerHTML = `
+  ${header()}
         <main id>
         <section class="bg-[url(src/assets/home_img/foto_portada.png)] bg-cover w-full h-130 flex flex-col items-end justify-center">
           <div class="fondo p-10 h-full flex flex-col items-center">
@@ -26,7 +28,5 @@ export const landingPage = (app) => {
       document.getElementById('btn_buy').addEventListener('click', () => {
     navigateTo("/buy");
   });
-        document.getElementById('btn_users').addEventListener('click', () => {
-    navigateTo("/users");
-  });  
+  initHeaderevents()
 };

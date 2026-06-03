@@ -1,7 +1,9 @@
+import { header, initHeaderevents } from "../components/header";
 import { initUsers } from "../utils/btn_save_users";
 
 export const usersSession = (app) => {
   app.innerHTML = `
+  ${header()}
     <div class="bg-black">
       <div class="flex flex-col bg-black border border-gray-300 rounded-l mx-[10%] p-4">
         <div class="flex flex-row w-full justify-between items-center gap-4">
@@ -97,9 +99,6 @@ export const usersSession = (app) => {
         document.getElementById('btn_buy').addEventListener('click', () => {
       navigateTo("/buy");
     });
-          document.getElementById('btn_users').addEventListener('click', () => {
-      navigateTo("/users");
-    });  
-
+  initHeaderevents();
   initUsers();
 };
