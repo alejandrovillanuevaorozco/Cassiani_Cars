@@ -1,10 +1,40 @@
 {
   "users": [
-    { "id": 1, "name": "John", "lastName": "Gutierrez", "role": "admin", "email": "jjhonson@email.com", "password": "123"},
-    { "id": 2, "name": "Mary", "lastName": "Gomez", "role": "customer", "email": "mary@icloud.me", "password": "qwe"}
+    {
+      "id": 1,
+      "name": "John",
+      "lastName": "Gutierrez",
+      "role": "admin",
+      "email": "jjhonson@email.com",
+      "password": "123"
+    },
+    {
+      "id": 2,
+      "name": "daniel",
+      "lastName": "rodriguez",
+      "role": "customer",
+      "email": "dani@me.com",
+      "password": "qqq"
+    },
+    {
+      "id": 3,
+      "name": "Andrés",
+      "lastName": "Mauricio",
+      "role": "customer",
+      "email": "daniel@me.com",
+      "password": "ddd"
+    }
   ],
   "vehicle": [
-    { "id": 1, "text": "a comment about post 1", "postId": "1" },
-    { "id": 2, "text": "another comment about post 1", "postId": "1" }
+    {
+      "id": 1,
+      "text": "a comment about post 1",
+      "postId": "1"
+    },
+    {
+      "id": 2,
+      "text": "another comment about post 1",
+      "postId": "1"
+    }
   ]
 }
