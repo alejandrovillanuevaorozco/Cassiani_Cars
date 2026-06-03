@@ -122,4 +122,22 @@ export const servicesSession = (app)=>{
       </div>
     </div>
   </section>`;
+    document.getElementById('btn_login').addEventListener('click', () => {
+    navigateTo("/login");
+  });
+    document.getElementById('btn_home').addEventListener('click', () => {
+    navigateTo("/");
+  });
+      document.getElementById('btn_model').addEventListener('click', () => {
+    navigateTo("/model");
+  });
+      document.getElementById('btn_services').addEventListener('click', () => {
+    navigateTo("/services");
+  });
+      document.getElementById('btn_buy').addEventListener('click', () => {
+    navigateTo("/buy");
+  });
+        document.getElementById('btn_users').addEventListener('click', () => {
+    navigateTo("/users");
+  });  
 };
