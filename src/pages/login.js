@@ -120,7 +120,7 @@ export const loginSession = (app) => {
     const emailInput = document.getElementById('email-input').value;
     const passwordInput = document.getElementById('password-input').value;
 
-    console.log(validateLogin(emailInput, passwordInput));
+    validateLogin(emailInput, passwordInput);
 
   });
 
