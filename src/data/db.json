@@ -47,6 +47,14 @@
       "role": "customer",
       "email": "",
       "password": ""
+    },
+    {
+      "name": "asdasd",
+      "lastName": "asdasd",
+      "email": "sadasdad@gmail.com",
+      "role": "Admin",
+      "password": "sadasdasd",
+      "id": 7
     }
   ],
   "vehicle": [
