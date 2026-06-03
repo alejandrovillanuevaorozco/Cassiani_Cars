@@ -123,6 +123,7 @@ export const loginSession = (app) => {
     const passwordInput = document.getElementById('passwordLogin-input').value;
 
     validateLogin(emailInput, passwordInput);
+    navigateTo("/");
 
   });
   const signUpForm = document.getElementById('register-form');
