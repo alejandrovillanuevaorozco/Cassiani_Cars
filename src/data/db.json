@@ -10,19 +10,35 @@
     },
     {
       "id": 2,
-      "name": "daniel",
-      "lastName": "rodriguez",
-      "role": "customer",
-      "email": "dani@me.com",
-      "password": "qqq"
+      "name": "Mary",
+      "lastName": "Gomez",
+      "role": "client",
+      "email": "mary@icloud.me",
+      "password": "qwe"
     },
     {
-      "id": 3,
-      "name": "Andrés",
-      "lastName": "Mauricio",
-      "role": "customer",
-      "email": "daniel@me.com",
-      "password": "ddd"
+      "name": "Alejandro",
+      "lastName": "Villanueva",
+      "email": "alejandro.villanuevaorozco@gmail.com",
+      "role": "Admin",
+      "password": "Admin123",
+      "id": 3
+    },
+    {
+      "name": "Didian",
+      "lastName": "Cassiani",
+      "email": "didi@gmail.com",
+      "role": "Admin",
+      "password": "Admin123",
+      "id": 4
+    },
+    {
+      "name": "Eimy",
+      "lastName": "Asdasda",
+      "email": "eimy@gmail.com",
+      "role": "client",
+      "password": "Loca",
+      "id": 5
     }
   ],
   "vehicle": [

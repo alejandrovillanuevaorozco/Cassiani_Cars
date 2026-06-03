@@ -1,8 +1,7 @@
 import { navigateTo } from "../router/router";
-import { validateLogin, signUpAccount, verifyMatchPassword } from "../utils/helpers";
-export const loginSession = (app) => {
-  document.querySelector('#app').innerHTML = `
-    <div class="bg-[url(src/assets/cassiani-bg-login.png)]
+export const loginSession = (app)=>{
+    document.querySelector('#app').innerHTML = `
+    <div class="bg-[url(src/assets/login_img/cassiani-bg-login.png)]
     bg-cover
     bg-no-repeat
     min-h-screen
@@ -114,59 +113,5 @@ export const loginSession = (app) => {
         </div>
       </div>
     </div>
-    `;
-
-  const loginForm = document.getElementById('login-form');
-  loginForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const emailInput = document.getElementById('emaillogin-input').value;
-    const passwordInput = document.getElementById('passwordLogin-input').value;
-
-    validateLogin(emailInput, passwordInput);
-
-  });
-  const signUpForm = document.getElementById('register-form');
-  const signUpButton = document.getElementById('signup-btn');
-  const confirmPasswordInput = document.getElementById('confirm-input');
-  const createAccButton = document.getElementById('create-account-btn');
-  const passwordInput = document.getElementById('password-input');
-  signUpButton.addEventListener('click',  (e) => {
-    e.preventDefault();
-    toggleHidden(signUpForm, loginForm, document.getElementById('titleLogin'));
-
-  });
-
-  verifyMatchPassword(passwordInput, confirmPasswordInput, createAccButton);
-  passwordInput.addEventListener('input', ()=>{
-    verifyMatchPassword(passwordInput, confirmPasswordInput, createAccButton);
-  });
-  confirmPasswordInput.addEventListener('input', ()=>{
-    verifyMatchPassword(passwordInput, confirmPasswordInput, createAccButton);
-  });
-
-  
-
-  signUpForm.addEventListener('submit', (e)=>{
-    
-    e.preventDefault();
-    signUpAccount();
-    
-    //signUpForm.reset();
-    
-    // toggleHidden(signUpForm, loginForm, document.getElementById('titleLogin'));
-    
-    });
-
-    document.getElementById('signin-btn').addEventListener('click', (e)=>{
-      e.preventDefault();
-      toggleHidden(signUpForm, loginForm, document.getElementById('titleLogin'));
-    });
-    document.getElementById('cancel-btn').addEventListener('click', (e)=>{
-      e.preventDefault();
-      toggleHidden(signUpForm, loginForm, document.getElementById('titleLogin'));
-  });
+    `; 
 };
-
-function toggleHidden(e1, e2, e3){
-  return e1.classList.toggle('hidden'), e2.classList.toggle('hidden'), e3.classList.toggle('hidden') 
-}
