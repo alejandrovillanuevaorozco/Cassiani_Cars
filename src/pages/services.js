@@ -124,7 +124,7 @@ export const servicesSession = (app)=>{
       </div>
     </div>
   </section>`;
-    document.getElementById('btn_login').addEventListener('click', () => {
+      document.getElementById('btn_login').addEventListener('click', () => {
     navigateTo("/login");
   });
     document.getElementById('btn_home').addEventListener('click', () => {
@@ -139,8 +139,5 @@ export const servicesSession = (app)=>{
       document.getElementById('btn_buy').addEventListener('click', () => {
     navigateTo("/buy");
   });
-        document.getElementById('btn_users').addEventListener('click', () => {
-    navigateTo("/users");
-  });  
   initHeaderevents()
 };

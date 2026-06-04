@@ -84,7 +84,7 @@ export const usersSession = (app) => {
       </dialog>
     </div>
   `;
-    document.getElementById('btn_login').addEventListener('click', () => {
+      document.getElementById('btn_login').addEventListener('click', () => {
       navigateTo("/login");
     });
       document.getElementById('btn_home').addEventListener('click', () => {
